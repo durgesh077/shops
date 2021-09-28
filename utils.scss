@@ -60,45 +60,39 @@ body
     position:fixed;
     z-index:999999;
     inset:0px;
-    background-image:linear-gradient(rgb(10, 171, 207),rgb(65, 97, 65));  
+    background-image:linear-gradient(rgb(10, 171, 207),rgb(65, 97, 65)) ;
+    background-repeat:no-repeat;
+    background-size:cover;  
     color:rgb(173, 152, 152);
     display: grid;
     place-items: center;
     transition:opacity 1s ease ,transform 1s ease; 
-    &>div
+    &>div{
+        height:20vh; 
+        width:20vh;  
+        position:relative;
+        display:grid; 
+        place-items:center;
+        overflow:hidden;
+    }
+    &>div>div
     {  
+        margin:auto;
+        position:absolute;
         display: grid;  
         place-items:center;
         border:0;  
-        background-image:conic-gradient(red,blue,transparent,purple,transparent );
+        background-image:conic-gradient(red,blue,transparent,purple,transparent,rgb(255, 0, 0,0.1) );
         animation: rotateColor 1s ease-in-out infinite both;
-        height:20%;  
+        height:100%;  
         aspect-ratio:1/1; 
         box-shadow: 0 0 3px 3px gray;
-        div
-        {
-            width:85%;
-            height:85%;
-            background-color:green;
-        }
     }
 }
 @keyframes rotateColor{
     0%{ 
-       background-image: conic-gradient(from 90deg ,red,blue,transparent,purple,transparent )
-    }
-    25%{ 
-        background-image: conic-gradient(from 180deg ,red,blue,transparent,purple,transparent )
-
-    }
-     75%{ 
-        background-image: conic-gradient(from 270deg ,red,blue,transparent,purple,transparent )
-
-    }
-    100%{ 
-       background-image: conic-gradient(from 360deg ,red,blue,transparent,purple,transparent )
-
-    }
+        transform:rotate(1turn); 
+        }
 }
 
 @import "utils2";

@@ -65,6 +65,8 @@ body {
   inset: 0px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0aabcf), to(#416141));
   background-image: linear-gradient(#0aabcf, #416141);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ad9898;
   display: -ms-grid;
   display: grid;
@@ -76,52 +78,42 @@ body {
 }
 
 #initial > div {
+  height: 20vh;
+  width: 20vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+#initial > div > div {
+  margin: auto;
+  position: absolute;
   display: -ms-grid;
   display: grid;
   place-items: center;
   border: 0;
-  background-image: conic-gradient(red, blue, transparent, purple, transparent);
+  background-image: conic-gradient(red, blue, transparent, purple, transparent, red);
   -webkit-animation: rotateColor 1s ease-in-out infinite both;
           animation: rotateColor 1s ease-in-out infinite both;
-  height: 20%;
+  height: 100%;
   aspect-ratio: 1/1;
   -webkit-box-shadow: 0 0 3px 3px gray;
           box-shadow: 0 0 3px 3px gray;
 }
 
-/*#initial > div div {
-  width: 85%;
-  height: 85%;
-  background-color: green;
-}*/
-
 @-webkit-keyframes rotateColor {
   0% {
-    background-image: conic-gradient(from 90deg, red, blue, transparent, purple, transparent);
-  }
-  25% {
-    background-image: conic-gradient(from 180deg, red, blue, transparent, purple, transparent);
-  }
-  75% {
-    background-image: conic-gradient(from 270deg, red, blue, transparent, purple, transparent);
-  }
-  100% {
-    background-image: conic-gradient(from 360deg, red, blue, transparent, purple, transparent);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
 @keyframes rotateColor {
   0% {
-    background-image: conic-gradient(from 90deg, red, blue, transparent, purple, transparent);
-  }
-  25% {
-    background-image: conic-gradient(from 180deg, red, blue, transparent, purple, transparent);
-  }
-  75% {
-    background-image: conic-gradient(from 270deg, red, blue, transparent, purple, transparent);
-  }
-  100% {
-    background-image: conic-gradient(from 360deg, red, blue, transparent, purple, transparent);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 /*# sourceMappingURL=utils.css.map */
