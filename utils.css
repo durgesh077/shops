@@ -156,6 +156,9 @@ body > .loginForm h2 {
   font-size: 3em;
   padding-top: 5px;
   padding-bottom: 50px;
+  -webkit-text-decoration: 4px underline white;
+          text-decoration: 4px underline white;
+  text-underline-offset: 3px;
 }
 
 body > .loginForm label {
@@ -193,13 +196,13 @@ body > .loginForm .extra a {
   padding: 10px;
   text-decoration: none;
   margin: 10px auto;
-  color: #00ff40;
+  color: #d3e2d7;
   font-size: 1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body > .loginForm .extra a:visited, body > .loginForm .extra a:active {
-  color: #00ff40;
+  color: #c6dacb;
 }
 
 body > .loginForm .contacts {
