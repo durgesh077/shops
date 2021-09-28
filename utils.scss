@@ -1,8 +1,10 @@
 body
 {
+    margin:0; 
+    padding:0px;
     position:relative;
     background:linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.664)) ,url(images/background.jpg); 
-    background-size: cover ,100%;
+    background-size: cover ,auto;
     background-repeat: no-repeat;
     background-attachment: fixed,local;
 }
@@ -82,7 +84,8 @@ body
         display: grid;  
         place-items:center;
         border:0;  
-        background-image:conic-gradient(red,blue,transparent,purple,transparent,rgb(255, 0, 0,0.1) );
+        background-image:conic-gradient(red,blue,transparent,purple,transparent,
+        red );
         animation: rotateColor 1s ease-in-out infinite both;
         height:100%;  
         aspect-ratio:1/1; 
