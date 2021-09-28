@@ -12,12 +12,12 @@
 </head>
 
 <body onload="hideFirst()">
-    <!--<div id="initial">
+    <div id="initial">
         <div >
             <div></div>
         </div>
-    </div>-->
-    <!--<img src="//source.unsplash.com/random/700x500" style="display:none">-->
+    </div>
+    <img src="//source.unsplash.com/random/700x500" style="display:none">
     <header class="mhdr">
         <ul class="navigator">
             <li><i class="fas fa-home"></i> <a class="mlnk" href="home.html">Home</a></li>
@@ -28,9 +28,27 @@
         </ul>
         <img src="images/supMKT-logo.png" alt="logo" width="100px" height=auto />
     </header>
-
    <section class="loginForm">
-
+       <h2>Login Panel</h2>
+        <form>
+            <label for="userid">Username</label> <br>
+            <input type="text" name="user" id="userid" required>
+            <label for="pass" >Password</label><br>
+            <input type="password" name="passwd" id="pass" required><br>
+            <button type="button" id="btnli" class="btn" onclick="login()">
+               Login
+            </button>
+        </form>
+        <div class="extra">
+            <a href="#">Sign Up</a>
+            <a href="#">guest</a>
+        </div>
+        <div class="contacts">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+        </div>
     </section>
 </body>
 <script src="com.js">

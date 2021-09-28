@@ -17,6 +17,7 @@ body
         list-style-type:none;  
         display:flex; 
         font-size:1.2em;
+        align-items:center;
         li
         {
             padding:5px 15px; 
@@ -95,7 +96,11 @@ body
 @keyframes rotateColor{
     0%{ 
         transform:rotate(1turn); 
+        filter:hue-rotate(30deg);
         }
 }
+.activeNavBar{
+    background-color: green;
 
+}
 @import "utils2";
