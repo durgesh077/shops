@@ -242,4 +242,70 @@ body > .loginForm .contacts * {
 .loginForm:focus-within {
   background-color: black;
 }
+
+#mainContentAbout {
+  position: relative;
+  background: black;
+  color: white;
+  font-family: brush script MT;
+  width: 50%;
+  font-size: 30px;
+  grid-auto-flow: row;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  margin: auto;
+  -webkit-box-shadow: 0px 0px 2px 2px purple ,0px 0px 5px 5px navy;
+          box-shadow: 0px 0px 2px 2px purple ,0px 0px 5px 5px navy;
+}
+
+#mainContentAbout addr {
+  display: block;
+}
+
+#mainContentAbout img {
+  -webkit-clip-path: circle(48% at 40% 50%);
+          clip-path: circle(48% at 40% 50%);
+  margin: 20px -1px;
+}
+
+#mainContentAbout rect {
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 30px;
+  stroke-width: 5px;
+  stroke: cyan;
+  -webkit-animation: roundBorder 3s linear infinite;
+          animation: roundBorder 3s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  fill: none;
+}
+
+#bdRnd {
+  padding: 0;
+  top: 0px;
+  display: block;
+  left: 0px;
+  margin: 0;
+  position: absolute;
+}
+
+@-webkit-keyframes roundBorder {
+  from {
+    stroke-dashoffset: 0%;
+  }
+  to {
+    stroke-dashoffset: 410%;
+  }
+}
+
+@keyframes roundBorder {
+  from {
+    stroke-dashoffset: 0%;
+  }
+  to {
+    stroke-dashoffset: 410%;
+  }
+}
 /*# sourceMappingURL=utils.css.map */
