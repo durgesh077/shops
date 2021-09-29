@@ -1,0 +1,100 @@
+body{
+    background-size:contain;
+    overflow-x: hidden;
+}
+.mhdr{
+    img{
+        transform:translate(-45vw,50vh) scale(5,5);
+        transition:transform 500ms;
+    }
+}
+main{
+    h1{
+        opacity:0;
+        margin-top:50vh;
+        z-index:-1;
+        transition:opacity 1s ease;
+        position:sticky;
+        span:nth-child(1){
+            position:relative;
+            inset:0px 50px 0px 50px;
+            color:brown;  
+            font-family: cursive;
+            text-shadow:2px 2px 2px black;
+            font-size:1.5em;
+            text-decoration:4px underline red;
+            display:block;
+            transform:rotate(-10deg);
+        }
+
+        span:nth-child(2){
+            position:relative;
+            inset:0px 50px 0px 50px;
+            color:rgb(67, 165, 42);  
+            font-family: fantasy;
+            text-shadow:2px 2px 2px black;
+            font-size:1.5em;
+            text-decoration:4px underline rgb(0, 255, 42);
+            display:block;
+            transform:rotate(-10deg);
+        }
+        
+    }
+}
+.items{
+    margin:0px 30px 30px;
+    display:grid;  
+    grid-auto-flow:column;
+    grid-gap:10px ;
+    background:linear-gradient(30deg,rgba(0, 0, 0, 0.486),white,rgba(0, 0, 0, 0.486));
+    grid-auto-rows:30vh;
+    grid-auto-columns: 30vh;
+    border:2px solid black;
+    box-shadow:0 0 1px 1px white;
+    padding:10px;
+    box-sizing: margin-box;
+    overflow:auto !important;
+    div{
+        background-color:rgb(0, 255, 191);
+    }
+    img{
+        display:block;
+        height:100%;
+        aspect-ratio:1/1;
+        transition:transform 0.7s ease;
+        &:hover{
+            animation:blow 1s linear 1;
+        }
+        @keyframes blow{
+            25%{
+                transform:scale(0.8,0.8);
+                box-shadow:0px 0px 3px 1px black;
+            }
+            50%{
+                transform:scale(0.8,0.8);
+                box-shadow:0px 0px 3px 5px black;
+            }
+            100%{
+                transform:scale(1,1);
+                box-shadow:0px 0px 4px 10px black;
+            }
+        }
+    }
+    &:hover{
+        box-shadow:0px 0px 4px 7px cyan;
+    }
+}
+#mainHome{
+    #firstItem{
+        margin-top:50vh;  
+    }
+    h3{
+        color:cyan;
+        margin-left:40px;
+        text-decoration:2px underline cyan;
+        margin-top:30px;
+        font-size:2em;
+        font-size:fantasy;
+    }
+}
+

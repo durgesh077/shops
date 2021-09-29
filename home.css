@@ -1,0 +1,150 @@
+body {
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+.mhdr img {
+  -webkit-transform: translate(-45vw, 50vh) scale(5, 5);
+          transform: translate(-45vw, 50vh) scale(5, 5);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+main h1 {
+  opacity: 0;
+  margin-top: 50vh;
+  z-index: -1;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+main h1 span:nth-child(1) {
+  position: relative;
+  inset: 0px 50px 0px 50px;
+  color: brown;
+  font-family: cursive;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
+  -webkit-text-decoration: 4px underline red;
+          text-decoration: 4px underline red;
+  display: block;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+main h1 span:nth-child(2) {
+  position: relative;
+  inset: 0px 50px 0px 50px;
+  color: #43a52a;
+  font-family: fantasy;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5em;
+  -webkit-text-decoration: 4px underline #00ff2a;
+          text-decoration: 4px underline #00ff2a;
+  display: block;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.items {
+  margin: 0px 30px 30px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.486), white, rgba(0, 0, 0, 0.486));
+  grid-auto-rows: 30vh;
+  grid-auto-columns: 30vh;
+  border: 2px solid black;
+  -webkit-box-shadow: 0 0 1px 1px white;
+          box-shadow: 0 0 1px 1px white;
+  padding: 10px;
+  -webkit-box-sizing: margin-box;
+          box-sizing: margin-box;
+  overflow: auto !important;
+}
+
+.items div {
+  background-color: #00ffbf;
+}
+
+.items img {
+  display: block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -webkit-transition: -webkit-transform 0.7s ease;
+  transition: -webkit-transform 0.7s ease;
+  transition: transform 0.7s ease;
+  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+}
+
+.items img:hover {
+  -webkit-animation: blow 1s linear 1;
+          animation: blow 1s linear 1;
+}
+
+@-webkit-keyframes blow {
+  25% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+            box-shadow: 0px 0px 3px 1px black;
+  }
+  50% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-box-shadow: 0px 0px 3px 5px black;
+            box-shadow: 0px 0px 3px 5px black;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-box-shadow: 0px 0px 4px 10px black;
+            box-shadow: 0px 0px 4px 10px black;
+  }
+}
+
+@keyframes blow {
+  25% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-box-shadow: 0px 0px 3px 1px black;
+            box-shadow: 0px 0px 3px 1px black;
+  }
+  50% {
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+    -webkit-box-shadow: 0px 0px 3px 5px black;
+            box-shadow: 0px 0px 3px 5px black;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-box-shadow: 0px 0px 4px 10px black;
+            box-shadow: 0px 0px 4px 10px black;
+  }
+}
+
+.items:hover {
+  -webkit-box-shadow: 0px 0px 4px 7px cyan;
+          box-shadow: 0px 0px 4px 7px cyan;
+}
+
+#mainHome #firstItem {
+  margin-top: 50vh;
+}
+
+#mainHome h3 {
+  color: cyan;
+  margin-left: 40px;
+  -webkit-text-decoration: 2px underline cyan;
+          text-decoration: 2px underline cyan;
+  margin-top: 30px;
+  font-size: 2em;
+  font-size: fantasy;
+}
+/*# sourceMappingURL=home.css.map */
