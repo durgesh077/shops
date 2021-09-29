@@ -51,8 +51,14 @@ body {
 
 .mhdr img {
   margin-left: auto;
+  aspect-ratio: 1/1;
   -webkit-clip-path: circle();
           clip-path: circle();
+}
+
+.mhdr #userActive {
+  margin-left: 50px;
+  color: blue;
 }
 
 .mlnk {

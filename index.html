@@ -13,7 +13,7 @@
 
 <body onload="hideFirst()">
     <div id="initial">
-        <div >
+        <div>
             <div></div>
         </div>
     </div>
@@ -23,20 +23,19 @@
             <li><i class="fas fa-home"></i> <a class="mlnk" href="home.html">Home</a></li>
             <li><i class="fas fa-wallet"></i> <a class="mlnk" href="wallet.html">Wallet</a></li>
             <li><i class="fas fa-pen-alt"></i> <a class="mlnk" href="orders.html">Orders</a></li>
-            <li><i class="fas fa-address-card"></i> <a class="mlnk" href="contacts">Contacts</a></li>
-            <li><i class="fas fa-file-archive"></i> <a class="mlnk" href="about.html">About</a></li>
+            <li><i class="fas fa-address-card"></i> <a class="mlnk" href="about.html">About</a></li>
         </ul>
         <img src="images/supMKT-logo.png" alt="logo" width="100px" height=auto />
     </header>
-   <section class="loginForm">
-       <h2>Login Panel</h2>
+    <section class="loginForm">
+        <h2>Login Panel</h2>
         <form>
             <label for="userid">Username</label> <br>
-            <input type="text" name="user" id="userid" required>
-            <label for="pass" >Password</label><br>
-            <input type="password" name="passwd" id="pass" required><br>
+            <input type="text" name="user" id="userid" placeholder="Username" required>
+            <label for="pass">Password</label><br>
+            <input type="password" placeholder="Password" name="passwd" id="pass" required><br>
             <button type="button" id="btnli" class="btn" onclick="login()">
-               Login
+                Login
             </button>
         </form>
         <div class="extra">
@@ -54,4 +53,5 @@
 <script src="com.js">
 
 </script>
+
 </html>
