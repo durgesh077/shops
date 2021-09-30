@@ -14,7 +14,7 @@ body {
 
 main h1 {
   opacity: 0;
-  margin-top: 50vh;
+  margin-top: 35vh;
   z-index: -1;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
@@ -146,5 +146,20 @@ main h1 span:nth-child(2) {
   margin-top: 30px;
   font-size: 2em;
   font-size: fantasy;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mhdr img, main h1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  main h1 {
+    display: none;
+  }
+  #firstItem {
+    margin-top: 20vh;
+  }
 }
 /*# sourceMappingURL=home.css.map */

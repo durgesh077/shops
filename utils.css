@@ -21,6 +21,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   font-size: 1.2em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -51,14 +55,8 @@ body {
 
 .mhdr img {
   margin-left: auto;
-  aspect-ratio: 1/1;
   -webkit-clip-path: circle();
           clip-path: circle();
-}
-
-.mhdr #userActive {
-  margin-left: 50px;
-  color: blue;
 }
 
 .mlnk {
@@ -254,7 +252,7 @@ body > .loginForm .contacts * {
   background: black;
   color: white;
   font-family: brush script MT;
-  width: 50%;
+  width: clamp(300px, 50%, 100%);
   font-size: 30px;
   grid-auto-flow: row;
   display: -ms-grid;
@@ -264,6 +262,8 @@ body > .loginForm .contacts * {
   margin: auto;
   -webkit-box-shadow: 0px 0px 2px 2px purple ,0px 0px 5px 5px navy;
           box-shadow: 0px 0px 2px 2px purple ,0px 0px 5px 5px navy;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #mainContentAbout addr {

@@ -16,6 +16,7 @@ body
     {
         list-style-type:none;  
         display:flex; 
+        flex-flow:row nowrap;
         font-size:1.2em;
         align-items:center;
         li
@@ -104,4 +105,4 @@ body
 
 }
 @import "utils2";
-@import "utils3";
+//@import "utils3";

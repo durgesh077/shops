@@ -97,7 +97,7 @@ body > .loginForm{
     background:black;
     color:white;  
     font-family:brush script MT;
-    width:50%;
+    width:clamp(300px ,50%,100%);
     font-size:30px;
     grid-auto-flow:row;
     display:grid;  
@@ -105,6 +105,8 @@ body > .loginForm{
     padding:50px;
     margin:auto;
     box-shadow: 0px 0px 2px 2px purple ,0px 0px 5px 5px navy;
+    text-overflow: ellipsis;
+    overflow:hidden;
     addr{
         display:block;
     }
